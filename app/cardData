@@ -1,0 +1,30 @@
+export const deepDiveCards = [
+  {
+    image: "/images/Environmental-Social-Governance-767x633.webp",
+    alt: "ESG directional signs",
+    subheader: "Nature-Based Supply Chain",
+    header: "How do regenerative nature practices connect to business cases?",
+    summary:
+      "Business goals can be met through sustainable strategies. Our academy presents case studies where collaborating with local communities to implement regenerative practices leads to generating impact, value, and positive change.",
+    subheaderClass: "text-green-700",
+  },
+  {
+    image: "/images/deep-forest-river-landscape-119622802.webp",
+    alt: "Reforestation stream",
+    subheader: "Reforestation and Water",
+    header:
+      "Why is reforestation the key to water restoration and carbon sequestration goals?",
+    summary:
+      "Learn how technical and environmental skills can create tech tools for conservation efforts—helping conserve millions of acres and meet restoration goals through scalable, open-source projects.",
+    subheaderClass: "text-blue-700",
+  },
+  {
+    image: "/images/post3.webp",
+    alt: "Traditional canoe on water",
+    subheader: "Community-Based Projects",
+    header: "What can we learn from Indigenous-led ecosystem management?",
+    summary:
+      "Our academy shares how Indigenous partners have managed climate resilience using traditional knowledge—and how it's evolving in the age of AI.",
+    subheaderClass: "text-yellow-700",
+  },
+];
