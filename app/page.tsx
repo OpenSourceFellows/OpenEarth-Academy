@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex justify-center space-x-4">
             <Link
               href="#donate"
-              className="px-6 py-3 text-white bg-green-600 rounded"
+              className="px-6 py-3 text-white bg-[#e69138] rounded"
             >
               Get Updates
             </Link>

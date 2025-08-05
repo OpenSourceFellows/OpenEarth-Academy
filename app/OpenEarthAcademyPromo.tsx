@@ -2,7 +2,7 @@ export const OpenEarthAcademyPromo = () => {
   return (
     <section className="py-20">
       <div className="container py-16 mx-auto text-center">
-        <h2 className="mb-6 text-3xl font-bold  md:text-4xl">
+        <h2 className="mb-6 text-3xl font-bold md:text-4xl">
           Join OpenEarth Academy for $50
         </h2>
       </div>
@@ -64,7 +64,7 @@ export const OpenEarthAcademyPromo = () => {
               </span>
             </li>
           </ul>
-          <button className="px-8 py-3 mt-8 text-lg font-semibold text-white bg-gray-400 shadow hover:bg-blue-800">
+          <button className="px-8 py-3 mt-8 text-lg font-semibold text-white transition-colors duration-300 bg-[#425b76] shadow hover:bg-[#a3da8d]">
             Get updates
           </button>
         </div>
