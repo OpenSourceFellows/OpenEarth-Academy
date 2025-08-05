@@ -40,12 +40,13 @@ export default function Home() {
         }}
       >
         <div className="container mx-auto text-center py-36">
-          <h2 className="mb-4 text-4xl font-bold">
+          <h2 className="mb-4 text-4xl font-bold text-white">
             Join the OpenEarth Academy. Code for the Environment
           </h2>
-          <p className="mb-8 text-lg">
-            Empower communities to fight climate change through code, data, and
-            actionable projects.
+          <p className="mb-8 text-lg text-white">
+            Code for the environment. Create an impact on conservation
+            initiatives near you. Achieve climate joy. Next cohort starts August
+            4th.
           </p>
           <div className="flex justify-center space-x-4">
             <Link
@@ -151,7 +152,7 @@ export default function Home() {
         </div>
       </section>
       {/* Impact Metrics */}
-      <section className="py-16 bg-green-50">
+      <section className="py-16 bg-[#fafafa]">
         <div className="container mx-auto text-center">
           <h3 className="mb-8 text-3xl font-semibold">
             Deep Dive into Climate Tech

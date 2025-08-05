@@ -30,40 +30,56 @@ export const Slider = ({ slides = [] }: SliderProps) => {
       <h2 className="mb-10 text-3xl font-bold text-center md:text-4xl">
         OpenEarth Academy Supports Climate Tech Development
       </h2>
-      <div className="flex flex-col items-center justify-center max-w-4xl gap-0 mx-auto md:flex-row md:gap-8">
-        <img
-          src={slides[current].image}
-          alt={slides[current].imageAlt}
-          className="object-cover max-w-full rounded-l-lg md:max-w-lg h-72 md:h-80"
-        />
-        <div className="bg-[#425b76] text-white p-6 md:p-10 flex-1 rounded-none md:rounded-r-lg w-full md:w-[440px]">
-          <p className="mb-3 text-sm font-semibold tracking-widest uppercase opacity-80">
-            {slides[current].subheader}
-          </p>
-          <h3 className="mb-4 text-lg font-bold md:text-2xl">
-            {slides[current].title}
-          </h3>
-          {slides[current].text.map((p, i) => (
-            <p className="mb-2" key={i}>
-              {p}
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col overflow-hidden shadow-lg md:flex-row">
+          {/* Image - Left Half */}
+          <div className="w-full md:w-1/2">
+            <img
+              src={slides[current].image}
+              alt={slides[current].imageAlt}
+              className="w-full h-full "
+              style={{
+                minHeight: "320px",
+                maxHeight: "620px",
+                objectFit: "cover",
+                objectPosition: "bottom",
+              }}
+            />
+          </div>
+
+          {/* Text Content - Right Half */}
+          <div className="flex flex-col justify-start w-full p-8 text-white md:w-1/2 bg-[#425b76] md:p-12">
+            <p className="mb-4 text-xs font-semibold tracking-widest uppercase text-slate-300">
+              {slides[current].subheader}
             </p>
-          ))}
+            <h3 className="mb-6 text-xl font-bold leading-tight md:text-2xl">
+              {slides[current].title}
+            </h3>
+            <div className="space-y-4 text-sm leading-relaxed md:text-base">
+              {slides[current].text.map((paragraph, i) => (
+                <p key={i} className="text-slate-100">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
+      {/* Navigation */}
       <div className="flex justify-center gap-6 mt-8">
         <button
           onClick={goToPrev}
           aria-label="Previous slide"
-          className="flex items-center justify-center w-10 h-10 transition border rounded-full border-slate-400 hover:bg-slate-200"
+          className="flex items-center justify-center w-12 h-12 transition-colors border rounded-full border-slate-400 hover:bg-slate-200"
         >
-          &#8592;
+          <span className="text-lg">&#8592;</span>
         </button>
         <button
           onClick={goToNext}
           aria-label="Next slide"
-          className="flex items-center justify-center w-10 h-10 transition border rounded-full border-slate-400 hover:bg-slate-200"
+          className="flex items-center justify-center w-12 h-12 transition-colors border rounded-full border-slate-400 hover:bg-slate-200"
         >
-          &#8594;
+          <span className="text-lg">&#8594;</span>
         </button>
       </div>
     </section>
